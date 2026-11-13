@@ -1,0 +1,58 @@
+# Bounding Box Annotation Noise Research
+
+## Overview
+
+An independent computer vision research project investigating
+the effect of controlled bounding-box annotation noise on
+YOLO11n object detection performance.
+
+## Experimental Setup
+
+- Dataset: COCO2017 subset (1,500 images)
+- Training: 1,000 images
+- Validation: 200 images
+- Independent test: 300 images
+- Model: YOLO11n
+- Noise levels: 0%, 5%, 10%, 20%
+- Training seeds: 42, 123, 456, 789, 2026
+- Training experiments: 20
+- Epochs: 20
+- Image size: 640
+- Batch size: 8
+
+## Main Findings
+
+Independent test mean mAP50-95:
+
+| Noise | mAP50-95 |
+|---|---|
+| 0% | 0.395969 |
+| 5% | 0.396229 |
+| 10% | 0.395525 |
+| 20% | 0.394158 |
+
+No paired comparison reached conventional statistical
+significance (p < 0.05).
+
+These exploratory results do not establish universal
+robustness to annotation noise.
+
+## Repository Contents
+
+- `scripts/` - Research scripts
+- `results/` - Validation and independent test results
+- `reports/` - Research draft, figures and statistical tables
+
+## Limitations
+
+- Small COCO2017 subset
+- Five training seeds
+- One model architecture
+- Training-time and standalone validation discrepancies
+- MPS nondeterminism may affect reproducibility
+- Unadjusted statistical comparisons
+
+## Research Status
+
+Independent research manuscript.
+Not peer-reviewed or formally published.

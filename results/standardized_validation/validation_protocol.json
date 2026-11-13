@@ -1,0 +1,31 @@
+{
+  "protocol": "standardized_validation_v1",
+  "created_utc": "2026-11-13T14:21:32.141310+00:00",
+  "ultralytics_version": "8.4.207",
+  "torch_version": "2.15.0",
+  "noise_levels": [
+    0,
+    5,
+    10,
+    20
+  ],
+  "training_seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "split": "val",
+  "imgsz": 640,
+  "batch": 8,
+  "device": "mps",
+  "workers": 2,
+  "rect": false,
+  "half": false,
+  "augment": false,
+  "checkpoint": "best.pt",
+  "expected_validation_images": 200,
+  "expected_validation_boxes": 1536,
+  "note": "Training CSV and standalone validation can differ. This protocol is used consistently across all checkpoints. Independent test data is not evaluated here."
+}

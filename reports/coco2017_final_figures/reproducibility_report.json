@@ -1,0 +1,99 @@
+{
+  "study": "Impact of Bounding Box Annotation Noise on Object Detection Performance",
+  "dataset": "COCO2017 expansion subset",
+  "train_images": 1000,
+  "validation_images": 200,
+  "independent_test_images": 300,
+  "model": "YOLO11n",
+  "noise_levels_percent": [
+    0,
+    5,
+    10,
+    20
+  ],
+  "training_seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "noise_generation_seed": 42,
+  "training_epochs": 20,
+  "training_image_size": 640,
+  "training_batch": 8,
+  "test_protocol": {
+    "protocol": "independent_test_v1",
+    "created_utc": "2026-11-13T14:24:01.284487+00:00",
+    "ultralytics_version": "8.4.207",
+    "torch_version": "2.15.0",
+    "noise_levels": [
+      0,
+      5,
+      10,
+      20
+    ],
+    "training_seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ],
+    "split": "test",
+    "imgsz": 640,
+    "batch": 8,
+    "device": "mps",
+    "workers": 2,
+    "rect": false,
+    "half": false,
+    "augment": false,
+    "checkpoint": "best.pt",
+    "expected_test_images": 300,
+    "expected_test_boxes": 2333,
+    "note": "Independent held-out test evaluation. Checkpoints selected using validation only. No model selection or hyperparameter tuning based on test results."
+  },
+  "validation_protocol": {
+    "protocol": "standardized_validation_v1",
+    "created_utc": "2026-11-13T14:21:32.141310+00:00",
+    "ultralytics_version": "8.4.207",
+    "torch_version": "2.15.0",
+    "noise_levels": [
+      0,
+      5,
+      10,
+      20
+    ],
+    "training_seeds": [
+      42,
+      123,
+      456,
+      789,
+      2026
+    ],
+    "split": "val",
+    "imgsz": 640,
+    "batch": 8,
+    "device": "mps",
+    "workers": 2,
+    "rect": false,
+    "half": false,
+    "augment": false,
+    "checkpoint": "best.pt",
+    "expected_validation_images": 200,
+    "expected_validation_boxes": 1536,
+    "note": "Training CSV and standalone validation can differ. This protocol is used consistently across all checkpoints. Independent test data is not evaluated here."
+  },
+  "source_sha256": "49f2d93663d5ec01d3b19fcc964c30c1d8bc6b10d4c516a5bb5acce25a9c693e",
+  "test_protocol_sha256": "9bc16503cf6d1db6fbd2e2ab1d19356d332c4b1ec5e9bfdfb64269754df87b94",
+  "validation_protocol_sha256": "c70d01a132e8fafc7030824feb956792ad85d28155c8e49a4c09f658dfed089f",
+  "statistical_method": "Five paired training seeds; sample SD; two-sided paired t-tests; unadjusted 95% t confidence intervals.",
+  "limitations": [
+    "Small dataset subset and only five training seeds",
+    "Single model architecture and noise-generation method",
+    "Training-time versus standalone validation discrepancy",
+    "No multiple-comparison correction",
+    "MPS training may not be fully deterministic",
+    "No claim of universal robustness or equivalence"
+  ]
+}

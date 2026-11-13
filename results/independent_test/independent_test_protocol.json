@@ -1,0 +1,31 @@
+{
+  "protocol": "independent_test_v1",
+  "created_utc": "2026-11-13T14:24:01.284487+00:00",
+  "ultralytics_version": "8.4.207",
+  "torch_version": "2.15.0",
+  "noise_levels": [
+    0,
+    5,
+    10,
+    20
+  ],
+  "training_seeds": [
+    42,
+    123,
+    456,
+    789,
+    2026
+  ],
+  "split": "test",
+  "imgsz": 640,
+  "batch": 8,
+  "device": "mps",
+  "workers": 2,
+  "rect": false,
+  "half": false,
+  "augment": false,
+  "checkpoint": "best.pt",
+  "expected_test_images": 300,
+  "expected_test_boxes": 2333,
+  "note": "Independent held-out test evaluation. Checkpoints selected using validation only. No model selection or hyperparameter tuning based on test results."
+}
