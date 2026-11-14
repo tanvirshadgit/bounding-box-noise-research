@@ -66,3 +66,12 @@ A public Streamlit application demonstrates predictions from four YOLO11n models
 **Demo Source Code:** https://github.com/tanvirshadgit/yolo11n-public-demo
 
 The demo provides qualitative comparisons on user-provided images. Quantitative research conclusions should be based on the independent test-set evaluations rather than individual demo predictions.
+
+## Final Reviewed Research Paper
+
+The final reviewed manuscript documents the experimental methodology, independent test-set evaluation, paired statistical comparisons, findings, and limitations.
+
+- [Read Final Research Paper (PDF)](Bounding_Box_Noise_COCO2017_Final_Reviewed.pdf)
+- [Download Editable Research Paper (DOCX)](Bounding_Box_Noise_COCO2017_Final_Reviewed.docx)
+
+This manuscript reports exploratory research findings and has not undergone formal peer review.
