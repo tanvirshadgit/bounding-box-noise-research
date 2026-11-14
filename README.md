@@ -50,7 +50,7 @@ robustness to annotation noise.
 - One model architecture
 - Training-time and standalone validation discrepancies
 - MPS nondeterminism may affect reproducibility
-- Unadjusted statistical comparisons
+- Multiple comparisons: Holm correction applied to the three primary independent-test mAP50-95 comparisons; other reported comparisons remain unadjusted
 
 ## Research Status
 
