@@ -56,3 +56,13 @@ robustness to annotation noise.
 
 Independent research manuscript.
 Not peer-reviewed or formally published.
+
+## Interactive Research Demo
+
+A public Streamlit application demonstrates predictions from four YOLO11n models trained with 0%, 5%, 10%, and 20% bounding-box annotation noise.
+
+**Live Demo:** https://yolo11n-public-demo-12.streamlit.app/
+
+**Demo Source Code:** https://github.com/tanvirshadgit/yolo11n-public-demo
+
+The demo provides qualitative comparisons on user-provided images. Quantitative research conclusions should be based on the independent test-set evaluations rather than individual demo predictions.
