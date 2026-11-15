@@ -67,11 +67,22 @@ A public Streamlit application demonstrates predictions from four YOLO11n models
 
 The demo provides qualitative comparisons on user-provided images. Quantitative research conclusions should be based on the independent test-set evaluations rather than individual demo predictions.
 
-## Final Reviewed Research Paper
+## Published Research Preprint
 
-The final reviewed manuscript documents the experimental methodology, independent test-set evaluation, paired statistical comparisons, findings, and limitations.
+**Title:** Impact of Bounding Box Annotation Noise on Object Detection Performance: A Multi-Seed Evaluation of YOLO11n on a COCO2017 Subset
 
-- [Read Final Research Paper (PDF)](Bounding_Box_Noise_COCO2017_Final_Reviewed.pdf)
-- [Download Editable Research Paper (DOCX)](Bounding_Box_Noise_COCO2017_Final_Reviewed.docx)
+**Authors:** Tanvir Ahmed Khan and Shere Ali Khan
 
-This manuscript reports exploratory research findings and has not undergone formal peer review.
+**Publication:** Zenodo, 2026 (Version 1.0)
+
+**DOI:** https://doi.org/10.5281/zenodo.24224386
+
+**Publication status:** Publicly available preprint; not peer-reviewed.
+
+### Research Paper
+
+- [Read Published Research Paper (PDF)](Bounding_Box_Noise_COCO2017_Two_Authors.pdf)
+- [Download Editable Research Paper (DOCX)](Bounding_Box_Noise_COCO2017_Two_Authors.docx)
+- [View Official Zenodo Publication](https://zenodo.org/records/24224386)
+
+The manuscript presents 20 YOLO11n training experiments across four annotation-noise conditions and five random seeds, with independent test-set evaluation and paired statistical analysis.
