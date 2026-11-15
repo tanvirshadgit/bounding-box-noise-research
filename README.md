@@ -71,18 +71,20 @@ The demo provides qualitative comparisons on user-provided images. Quantitative 
 
 **Title:** Impact of Bounding Box Annotation Noise on Object Detection Performance: A Multi-Seed Evaluation of YOLO11n on a COCO2017 Subset
 
-**Authors:** Tanvir Ahmed Khan and Shere Ali Khan
+**Author:** Tanvir Ahmed Khan
 
-**Publication:** Zenodo, 2026 (Version 1.0)
+**Affiliation:** Independent Researcher
 
-**DOI:** https://doi.org/10.5281/zenodo.24224386
+**Publication:** Zenodo, 2026 (Version 1.1)
+
+**DOI:** https://doi.org/10.5281/zenodo.24249991
 
 **Publication status:** Publicly available preprint; not peer-reviewed.
 
 ### Research Paper
 
-- [Read Published Research Paper (PDF)](Bounding_Box_Noise_COCO2017_Two_Authors.pdf)
-- [Download Editable Research Paper (DOCX)](Bounding_Box_Noise_COCO2017_Two_Authors.docx)
-- [View Official Zenodo Publication](https://zenodo.org/records/24224386)
+- [Read Published Research Paper (PDF)](Bounding_Box_Noise_COCO2017_Single_Author_Final.pdf)
+- [Download Editable Research Paper (DOCX)](Bounding_Box_Noise_COCO2017_Single_Author_Final.docx)
+- [View Official Zenodo Publication](https://zenodo.org/records/24249991)
 
 The manuscript presents 20 YOLO11n training experiments across four annotation-noise conditions and five random seeds, with independent test-set evaluation and paired statistical analysis.
